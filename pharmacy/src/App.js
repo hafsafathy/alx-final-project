@@ -1,30 +1,3 @@
-// import React, { useState } from 'react';
-// import './App.css';
-// import Index from './pages/Index';
-// import Products from './pages/Products';
-// import Login from './pages/Login'
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Register from './pages/Register';
-// import ContactUs from './pages/ContactUs';
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Router>
-//             <Routes>
-//             <Route path='/' element={<Index />} />
-//             <Route path='/Products' element={<Products  />} />
-//               <Route path='/Login' element={<Login />} />
-//               <Route path='/Register' element={<Register/>} />
-//               <Route path='/ContactUs' element={<ContactUs/>} />
-//             </Routes>
-//       </Router>
-//     </div>
-//   );
-// }
-
-// export default App;
 import React, { useState } from 'react';
 import './App.css';
 import Index from './pages/Index';
