@@ -29,7 +29,7 @@ function Login() {
             </form>
           </div>
           <h4 className="animated wow slideInUp" data-wow-delay=".5s">If You Don't Have Account</h4>
-          <p className="animated wow slideInUp" data-wow-delay=".5s"><a href="register.html">Register Here</a></p>
+          <p className="animated wow slideInUp" data-wow-delay=".5s"><a href="/Register">Register Here</a></p>
         </div>
       </div>
     {/* //login */}
