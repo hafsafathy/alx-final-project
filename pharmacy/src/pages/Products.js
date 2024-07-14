@@ -143,6 +143,7 @@ function Products({ addToCart }) {
                       name="cart"
                       className="add-cart"
                       size='large'
+                      style={{cursor: 'pointer'}}
                       onClick={() => addToCart(product)}
                     ></ion-icon>
                   </div>
