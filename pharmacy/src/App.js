@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Index from './pages/Index';
 import Products from './pages/Products';
@@ -7,6 +7,7 @@ import Register from './pages/Register';
 import ContactUs from './pages/ContactUs';
 import Header from './pages/Header'; 
 import Footer from './pages/Footer';
+import axios from 'axios';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -19,6 +20,19 @@ function App() {
     }
     setCart([...cart, { ...product, quantity: 1 }]);
   };
+  
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/api/data')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => {
+        setError('Error fetching data');
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
     <div className="App">
